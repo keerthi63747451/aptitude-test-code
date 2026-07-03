@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2 - Navbar</title>
+  <style>
+    * { margin: 0; padding: 0; }
+    .navbar {
+      display: flex; justify-content: space-between; align-items: center;
+      background: #333; padding: 15px 30px; color: white;
+      flex-wrap: wrap;
+    }
+    .logo { font-size: 22px; font-weight: bold; }
+    .menu { display: flex; gap: 20px; list-style: none; }
+    .menu a { color: white; text-decoration: none; padding: 8px 12px; }
+    .menu a:hover { background: #555; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">MyLogo</div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
