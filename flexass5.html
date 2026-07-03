@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 5 - Sidebar</title>
+  <style>
+    body { margin: 0; }
+    .layout {
+      display: flex; min-height: 100vh; gap: 10px;
+    }
+    .sidebar {
+      flex: 0 0 250px; /* Fixed 250px width */
+      background: #34495e; color: white; padding: 20px;
+    }
+    .main {
+      flex: 1; /* Meedhi edam full ah */
+      background: #ecf0f1; padding: 20px;
+    }
+    @media (max-width: 768px) {
+      .layout { flex-direction: column; } /* Mobile la sidebar mela varum */
+      .sidebar { flex: 0 0 auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="sidebar">Sidebar - 250px Fixed</div>
+    <div class="main">Main Content</div>
+  </div>
+</body>
+</html>
